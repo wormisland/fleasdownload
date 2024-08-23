@@ -1,6 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    padding-top: 100px;
-    background-color: black;
+    background-color: rgb(37, 37, 31);
     color: white;
+    font-family: monospace;
+
+
+}
+
+.page {
+
+    height: 100vh;
+    width: 50vw;
+    background: black;
+    padding-top: 50px;
+    box-sizing: border-box;
     text-align: center;
+
+}
+
+.red {
+    color: yellow; 
+    font-size: 0.7em; 
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

@@ -5,17 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <title>free fleas</title>
-    <link href="/style.css" rel="stylesheet"/>
+    <link href="/home/m/Documents/fleas/style.css" rel="stylesheet"/>
   </head>
   <body>
-   <h1>
-    fleas.download
-   </h1>
+    <script>
+      let urls = ["images/flea1.jpeg", "images/flea2.jpeg", "images/flea3.jpeg"]
+      function random(min, max) {
+        return Math.floor(Math.random(min, max));
+      }
+      function procureFleas() {
+        let url = "";
+        url = urls[random(0, 3)];
+        return url;
+      }
+//"javascript:document.location=procureFleas()"
+    </script>
+    <div class="page">
+    <nav>
+    <pre class="red">
+ __ _                     _                     _                 _ 
+ / _| | ___  __ _ ___   __| | _____      ___ __ | | ___   __ _  __| |
+| |_| |/ _ \/ _` / __| / _` |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |
+|  _| |  __/ (_| \__ \| (_| | (_) \ V  V /| | | | | (_) | (_| | (_| |
+|_| |_|\___|\__,_|___(_)__,_|\___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|
+                                                                          
+</pre>
+<a href="about.html">
+  /about
+</a>
+<a href="files.html">
+  /files
+</a>
+    </nav>
    <p>click below</p>
    <p>
-    <a href="/images/flea1.jpeg" download> <!-- https://commons.wikimedia.org/wiki/File:Flea_%28251_01%29_Aphaniptera;_total_preparation.jpg -->
-        download
+    <a href="images/flea1.jpeg" Download="flea.jpg"> <!-- https://commons.wikimedia.org/wiki/File:Flea_%28251_01%29_Aphaniptera;_total_preparation.jpg -->
+<pre>
+◤==========◥
++  download  +
+◣==========◢
+
+</pre>
     </a>
    </p>
+   </div>
   </body>
 </html>
