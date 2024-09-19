@@ -17,17 +17,25 @@ body {
     height: 400px;
     width: 400px;
     background: black;
-    padding-top: 50px;
+    color: yellow;
+    padding: 50px 0px;
     box-sizing: border-box;
     text-align: center;
     outline: yellow solid 1px;
     line-height: 1.5;
+    overflow: scroll;
 
 }
 
-.red {
+.fleasdownload {
     color: yellow; 
     font-size: 0.7em; 
+}
+
+article > p, ul {
+    padding: 0px 25px;
+    text-align: left;
+    list-style-position: inside;
 }
 
 a {
@@ -37,6 +45,12 @@ a {
 
 a:hover {
     text-decoration: underline;    
+}
+
+#downloadLink:hover {
+    text-decoration: none;
+    color: lime;
+    cursor: pointer;
 }
 
 ::selection {

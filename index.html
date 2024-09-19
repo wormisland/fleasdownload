@@ -7,52 +7,52 @@
     <title>free fleas</title>
     <link href="style.css" rel="stylesheet"/>
   </head>
-  <body>
-    <script>
-      let urls = ["images/flea1.jpeg", "images/flea2.jpeg", "images/flea3.jpeg"]
-      function random(min, max) {
-        return Math.floor(Math.random(min, max));
-      }
-      function procureFleas() {
-        let url = "";
-        url = urls[random(0, 3)];
-        return url;
-      }
-//"javascript:document.location=procureFleas()"
-    </script>
+  <body> 
     <div class="page">
-    <nav>
-    <pre class="red" title="fleas.download"><strong>
+      <nav>
+
+<pre class="fleasdownload" title="fleas.download">
+<strong>
   __ _                     _                     _                 _ 
  / _| | ___  __ _ ___   __| | _____      ___ __ | | ___   __ _  __| |
 | |_| |/ _ \/ _` / __| / _` |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |
 |  _| |  __/ (_| \__ \| (_| | (_) \ V  V /| | | | | (_) | (_| | (_| |
 |_| |_|\___|\__,_|___(_)__,_|\___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|
-                                                                          
-</strong></pre><br>
-<a href="about.html">
-  /about
-</a>
-<a href="files.html">
-  /files
-</a>
-    </nav>
-    <br>
-    <section>
-   <p>
-    <a href="images/flea1.jpeg" Download="flea.jpg"> <!-- https://commons.wikimedia.org/wiki/File:Flea_%28251_01%29_Aphaniptera;_total_preparation.jpg -->
-    <pre>
+</strong>
+</pre>
+        <a href="about.html">
+          /about.html
+        </a>
+        <a href="files.html">
+          /files.html
+        </a>
+      </nav>
+      <br><br>
+      <section>
+        <p>
+          <a onclick="this.href = urls[random(0, 5)];" id="downloadLink"  download>
+
+<pre>
 ◤==============◥
 +    download    +
 ◣==============◢
+</pre>
 
-    </pre>
-    </a>
-   </p><br><br><br><br>
-   </section>
+          </a>
+        </p>
+        <br><br><br>
+    </section>
    <footer>
     <a href="https://github.com/wormisle/fleasdownload">@ https://github.com/wormisle/fleasdownload</a>
   </footer>
    </div>
+   <script>
+    document.getElementById("downloadLink").href = "images/flea1.jpeg";
+    let urls = ["images/flea1.jpeg", "images/unknown1.jpg", "images/unknown2.jpg", "images/Daphnia1.jpg", "images/Ctenocephalides_canis1.jpg"]
+    function random(min, max) {
+      let random = Math.floor(Math.random() * (max - min)) + min;
+      return random;
+    }
+  </script>
   </body>
 </html>
